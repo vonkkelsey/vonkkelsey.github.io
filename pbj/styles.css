@@ -1,0 +1,28 @@
+body {
+  background-color: #92afa9;
+  font-family: "inconsolata",sans-serif;
+    font-style: normal;
+    font-weight: 500;
+  color: white;
+}
+canvas {
+  display: block;
+  clear: both;
+  margin: auto;
+}
+h1 {
+    color: white;
+    font-size: 50px;
+    font-family: "balboa-plus-fill",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  display: block;
+  clear: both;
+  margin: auto;
+}

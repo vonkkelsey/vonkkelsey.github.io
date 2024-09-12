@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | PB&J</title>
+    <style>
+    /* a style sheet needs to be present for cursor hiding and custom cursors to work. */
+    </style>
+    <script src="https://use.typekit.net/kec0pxk.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+    <h1>PB&amp;J</h1>
+    <p>You are a piece of bread desperataly in love with a slice of jelly toast. To earn her love, you must become the impossible.<br>You must become... peanut butter toast.<br><br>Please note the webplayer may take a minute to load the game. Occasionally sound will not play until you touch the peanut butter for the first time. I made this in college and have forgotten how to fix it.</p>
+    </div>
+    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+    <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 1072693248,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    dataUrl: "Release/PBJ.data",
+    codeUrl: "Release/PBJ.js",
+    memUrl: "Release/PBJ.mem",
+    
+  };
+</script>
+<script src="Release/UnityLoader.js"></script>
+
+  </body>
+</html>
