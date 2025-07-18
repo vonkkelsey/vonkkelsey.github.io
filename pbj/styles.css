@@ -20,3 +20,44 @@ h1 {
   clear: both;
   margin: auto;
 }
+
+a {
+  text-align: center;
+  border-radius: 0;
+  box-shadow: none;
+  text-decoration: none;
+  transition: margin 500ms color 200ms;
+  margin: 5px 0;
+  display: block;
+  clear: both
+}
+
+a.secondary {
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+}
+a.secondary span {
+  margin-top: 7px;
+  display: block;
+  clear: both;
+}
+a.secondary span::before {
+  content: '< ';
+  margin-right: 0;
+  transition: margin 500ms;
+}
+
+a.secondary span::after {
+  content: ' >';
+  margin-left: 0;
+  transition: margin 500ms;
+}
+a:hover span::before {
+  margin-right: 10px;
+  transition: margin 500ms;
+}
+a:hover span::after {
+  margin-left: 10px;
+  transition: margin 500ms;
+}
