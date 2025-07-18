@@ -19,24 +19,58 @@ h1 {
     font-style: normal;
     font-weight: 400;
     margin-bottom: 10px;
+    text-align: right;
 }
 
 a {
     float: right;
-    background-color: #e23d48;
     text-align: center;
     border-radius: 0;
     box-shadow: none;
-    border: 3px solid #e23d48;
-    color: white;
-    padding: 10px 30px 10px 30px;
-    width: 150px;
     text-decoration: none;
+    clear: both;
+    margin: 5px 0px;
 }
 
-a:hover {
-    background-color: white;
+a.primary {
+    background-color: #e23d48;
+    color: white;
+    padding: 13px 30px 13px 30px;
+    width: 150px;
+    clear: both;
+    margin: 5px 0px;
+    transition: width 500ms;
+}
+
+a.secondary {
     color: #e23d48;
+    font-weight: 600;
+}
+
+a.secondary::before {
+    content: '< ';
+    margin: 0;
+    transition: margin 500ms;
+}
+
+a.secondary::after {
+    content: ' >';
+    margin: 0;
+    transition: margin 500ms;
+}
+
+a.secondary:hover::before {
+  margin-right: 10px;
+  transition: margin 500ms;
+}
+a.secondary:hover::after {
+  margin-left: 10px;
+  transition: margin 500ms;
+}
+
+a.primary:hover {
+    width: 180px;
+    transition: width 500ms;
 }
 
 
