@@ -103,6 +103,9 @@ a.finder:hover {
 a.sapporo:hover {
   color: #faa338;
 }
+a.home:hover {
+  color: #e23d48;
+}
 a:hover span::before {
   margin-right: 10px;
   transition: margin 500ms;
