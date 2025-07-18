@@ -29,7 +29,8 @@ a {
   transition: margin 500ms color 200ms;
   margin: 5px 0;
   display: block;
-  clear: both
+  clear: both;
+  color: #fff;
 }
 
 a.secondary {
